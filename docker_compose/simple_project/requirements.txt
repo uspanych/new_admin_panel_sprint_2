@@ -1,0 +1,10 @@
+django==3.2.4
+python-dotenv==0.19
+psycopg2-binary~=2.9
+django-split-settings==1.1
+django-debug-toolbar==3.8.1
+flake8==6.0.0
+gunicorn~=20.1
+
+
+
