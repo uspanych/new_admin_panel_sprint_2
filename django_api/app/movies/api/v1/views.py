@@ -28,7 +28,10 @@ class MoviesApiMixin:
             'genres__name',
         )
 
-        return self.model.objects \
+        return self.model.objects.prefetch_related(
+            'genres',
+            'persons',
+        ) \
             .values().annotate(
                 actors=actors,
                 directors=directors,
